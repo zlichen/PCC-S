@@ -1,0 +1,11 @@
+lr: 0.0001
+batch_size: 1
+epoch: 20
+node_each_iter: 80000 # adjust to a smaller number if run out of cuda memory
+
+CKPT_DIR: pretrained
+
+SAVE_PLY_dir: refined_ply
+
+max_val_num: 1 # maximum with 550 point cloud frames for evaluation
+refine_tree_level: 12

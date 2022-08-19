@@ -1,0 +1,20 @@
+lr: 0.0001
+batch_size: 4
+epoch: 20
+node_each_iter: 100000 # adjust to a smaller number if run out of cuda memory
+
+ROOT_dir: /path/to/PCC-S
+CKPT_DIR: pretrained
+KITTI_BIN_dir: /path/to/kitti_odometry/dataset/sequences
+
+PROCESSED_DATA_dir: preprocessed_data # Directory for saving preprocess data
+pre_cache_feats_dir: pre_cache_feats/pretrained # Directory for saving predictions of entropy model
+
+TRAIN_SPLIT: data_ls/training_6000frs_seq_00_to_10.txt
+TEST_SPLIT: data_ls/testing_550frs_seq_11_to_21.txt
+
+
+
+max_val_num: 1 # maximum with 550 point cloud frames for evaluation
+octree_height: 12
+compress_save_dir: compress_save_dir
